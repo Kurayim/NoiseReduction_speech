@@ -9,3 +9,5 @@ In this project, I decided to simulate a simplified version of this process. To 
 In this project, we plan to implement filters such as a low-pass filter, notch filter, adaptive filter (LMS), spectral subtraction, and Wiener filter using MATLAB. After applying each filter to the audio signal, we will analyze the results to evaluate the impact of each method and determine whether there has been an improvement in sound quality. Finally, we will try to combine the methods that produced the best results and assess whether the final output approaches our desired quality level.
 
 Obviously, no filter can completely eliminate noise, but this challenge itself provides motivation to continue the project. If I have enough time, I am also interested in extending this work by applying machine learning models and exploring AI-based approaches to further improve the signal quality.
+
+![file_000000007558620aa628b5e1f97016d8](https://github.com/user-attachments/assets/d888b14b-c9d4-4dc3-9f25-48a39429047e)
