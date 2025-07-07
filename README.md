@@ -14,7 +14,9 @@ Obviously, no filter can completely eliminate noise, but this challenge itself p
   <img src="https://github.com/user-attachments/assets/d888b14b-c9d4-4dc3-9f25-48a39429047e" width="500"/>
 </p>
 
-<pre> ```matlab [x, fs] = audioread("Recording 8.wav"); sound(x, fs); % Plot signal in time domain figure; plot(x); title('Recorded Noisy Signal (Time Domain)'); xlabel('Sample'); ylabel('Amplitude'); grid on; % Plot spectrogram figure; spectrogram(x, 1024, 512, 1024, fs, 'yaxis'); title('Spectrogram of Recorded Signal'); ``` </pre>
+
+# Orginal Signal
+At the beginning of the project, I recorded an audio file of my voice in front of a fan. The purpose of this step is to observe and analyze the time-domain waveform of the original signal as well as its frequency content using a spectrogram.
 
 
 
