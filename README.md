@@ -10,4 +10,6 @@ In this project, we plan to implement filters such as a low-pass filter, notch f
 
 Obviously, no filter can completely eliminate noise, but this challenge itself provides motivation to continue the project. If I have enough time, I am also interested in extending this work by applying machine learning models and exploring AI-based approaches to further improve the signal quality.
 
-![file_000000007558620aa628b5e1f97016d8](https://github.com/user-attachments/assets/d888b14b-c9d4-4dc3-9f25-48a39429047e)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d888b14b-c9d4-4dc3-9f25-48a39429047e" width="400"/>
+</p>
