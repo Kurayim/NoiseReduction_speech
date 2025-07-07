@@ -23,6 +23,25 @@ At the beginning of the project, I recorded an audio file of my voice in front o
 </p>
 
 
+From these two plots — especially the spectrogram — we can extract valuable information. As shown, the total duration of the signal is approximately 7 seconds, and my speech starts after the 4-second mark. During the first four seconds, only environmental noise is present.
+
+It is also evident that there is a high likelihood of noise occurring in frequencies below 2 kHz. Therefore, it seems that by applying a low-pass filter, we can significantly reduce the noise observed in the lower part of the spectrogram and obtain a cleaner and clearer signal as a result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
