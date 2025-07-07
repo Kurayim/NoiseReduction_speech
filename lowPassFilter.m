@@ -13,7 +13,7 @@ sound(x_filtered, fs);
 disp("Playing filtered audio...");
 
 % Save the filtered audio to a new file
-audiowrite('FilteredAudio.wav', x_filtered, fs);
+audiowrite('lowPassFilterAudio.wav', x_filtered, fs);
 
 % Plot original and filtered signals in time domain
 figure;
