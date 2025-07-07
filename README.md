@@ -18,7 +18,9 @@ Obviously, no filter can completely eliminate noise, but this challenge itself p
 # Orginal Signal
 At the beginning of the project, I recorded an audio file of my voice in front of a fan. The purpose of this step is to observe and analyze the time-domain waveform of the original signal (Recording 8.wav) as well as its frequency content using a spectrogram.
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ffe62523-c344-4b00-92df-7a6f7fef3eeb" width="500"/>
+</p>
 
 
 
