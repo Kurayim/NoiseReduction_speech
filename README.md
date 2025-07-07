@@ -27,8 +27,11 @@ From these two plots — especially the spectrogram — valuable information can
 
 As you know, the main energy of speech signals is concentrated in lower frequencies. Therefore, it seems that by using a low-pass filter, we can remove most of the high-frequency noise and obtain a cleaner and clearer signal. I plan to use this filter to attenuate frequency components above 2 kHz.
 
+# Low Pass Filter
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/04e89645-7f27-46fb-9c6a-af3fe8a77094" width="1200"/>
+</p>
 
 
 
