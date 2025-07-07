@@ -34,7 +34,9 @@ As you know, the main energy of speech signals is concentrated in lower frequenc
 </p>
 
 
+Based on the results obtained from this filter, it can be concluded that, according to the spectrogram, the high-frequency components of the signal have been significantly attenuated. However, when listening to the output file lowPassFilterAudio.wav, it appears that although the high-frequency noise has been removed, the low-frequency noise still remains, and there is not a substantial difference compared to the original signal.
 
+At this point, it seems that the majority of the frequencies present in the original signal are concentrated in the lower frequency range.
 
 
 
