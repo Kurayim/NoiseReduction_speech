@@ -72,7 +72,9 @@ The LMS (Least Mean Squares) algorithm is one of the simplest and most widely us
 In this section, we plan to use such a filter. To implement the LMS approach, a reference noise signal is typically required — one that closely resembles the noise present in the primary signal. However, since a separate reference signal is not available in this project, we assume that during the first 0 to 4 seconds of the audio file, only environmental noise is recorded without any speech content. Therefore, we can use this segment as the reference noise signal.
 
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4a955fd1-2e6c-4097-9b6e-79d2f8e1c03f" width="1200"/>
+</p>
 
 
 
