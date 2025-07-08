@@ -41,7 +41,11 @@ At this stage, it appears that most of the noise present in the original signal 
 Given this observation, it seems appropriate to apply a notch filter to the original signal in order to selectively remove a narrow and specific frequency band, which may help further reduce the remaining noise.
 
 
+# notch Filter
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/09bc173d-f78a-4fa8-8fc5-732132ec8f82" width="1200"/>
+</p>
 
 
 
