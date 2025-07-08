@@ -76,7 +76,11 @@ In this section, we plan to use such a filter. To implement the LMS approach, a 
   <img src="https://github.com/user-attachments/assets/4a955fd1-2e6c-4097-9b6e-79d2f8e1c03f" width="1200"/>
 </p>
 
-
+Based on the time-frequency spectrogram analysis of the signal before and after applying the LMS filter, it can be observed that the filter has effectively reduced the high-energy noise regions, which appear as yellow areas in the spectrogram. In other words, the filter gradually identifies the environmental noise and, by continuously updating its coefficients, suppresses it effectively. This behavior highlights the adaptive capability of the filter; over time, it learns and becomes "accustomed" to the noise structure, resulting in a significant improvement in the quality of the output signal.
+The parameter 
+𝜇
+μ (learning rate) plays a critical role in this process, as adjusting it controls the speed and extent of the coefficient updates, directly influencing the effectiveness of noise suppression.
+Overall, this filter has demonstrated successful performance in reducing stationary or slowly varying noise; however, when listening to the output audio, it can be noticed that the speech signal intensity is also slightly reduced, which is considered a common drawback of adaptive noise cancellation techniques.
 
 
 
