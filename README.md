@@ -54,6 +54,24 @@ Therefore, if we can filter out a narrow band within this range — for example,
 </p>
 
 
+Based on the plots, it is evident that the notch filter has effectively attenuated the target frequency components and significantly reduced a large portion of the noise. However, when listening to the filtered audio output, it becomes clear that although the noise has been substantially reduced, the overall power of the original signal has also decreased.
+
+It appears that amplifying the signal after applying the notch filter might help improve the perceived quality of the speech. Nonetheless, it is important to note that such amplification may also enhance any remaining noise, which requires careful consideration.
+
+The main challenge in this project is that certain frequency components of the speech signal overlap with the dominant noise frequencies. Therefore, if these noisy frequency bands are entirely filtered out, essential parts of the speech signal may also be lost.
+
+As a result, it seems more appropriate to use a filter capable of intelligently distinguishing between the speech signal and the noise. Such a filter can better preserve the quality of the speech while effectively reducing noise by identifying and separating the unique features of each.
+
+
+#
+
+Adaptive filters are dynamic filters whose coefficients automatically change over time to minimize a specified error criterion. This feature makes them highly effective in non-stationary environments, where the characteristics of noise or interference continuously vary.
+
+The LMS (Least Mean Squares) algorithm is one of the simplest and most widely used methods for updating the coefficients of an adaptive filter. This algorithm iteratively adjusts the filter coefficients to minimize the mean squared error between the desired signal and the filter output. Due to its simplicity and low computational cost, the LMS algorithm is extensively used in applications such as real-time noise cancellation, echo suppression, and system identification. Overall, LMS-based adaptive filters play a crucial role in modern signal processing, particularly in scenarios where traditional fixed filters are not sufficient.
+
+In this section, we plan to use such a filter. To implement the LMS approach, a reference noise signal is typically required — one that closely resembles the noise present in the primary signal. However, since a separate reference signal is not available in this project, we assume that during the first 0 to 4 seconds of the audio file, only environmental noise is recorded without any speech content. Therefore, we can use this segment as the reference noise signal.
+
+
 
 
 
