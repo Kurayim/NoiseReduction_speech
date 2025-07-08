@@ -63,7 +63,7 @@ The main challenge in this project is that certain frequency components of the s
 As a result, it seems more appropriate to use a filter capable of intelligently distinguishing between the speech signal and the noise. Such a filter can better preserve the quality of the speech while effectively reducing noise by identifying and separating the unique features of each.
 
 
-#
+# Adaptive Filter(LMS)
 
 Adaptive filters are dynamic filters whose coefficients automatically change over time to minimize a specified error criterion. This feature makes them highly effective in non-stationary environments, where the characteristics of noise or interference continuously vary.
 
