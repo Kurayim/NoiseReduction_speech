@@ -43,6 +43,12 @@ Given this observation, it seems appropriate to apply a notch filter to the orig
 
 # notch Filter
 
+
+Based on the spectrogram plot, it can be observed that there are high-energy components, indicated by the yellow regions, approximately in the frequency range below 1 kHz. Considering that only environmental noise and the sound of the fan were present during the time interval from 0 to 4 seconds, it can be inferred that this high energy is mainly due to the background noise.
+
+Therefore, if we can filter out a narrow band within this range — for example, around 200 Hz with a bandwidth of approximately 1,000 Hz — it may be possible to obtain a cleaner and higher-quality signal compared to the original.
+
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/09bc173d-f78a-4fa8-8fc5-732132ec8f82" width="1200"/>
 </p>
