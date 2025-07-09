@@ -122,7 +122,9 @@ Despite these improvements, reducing musical noise led to a slight attenuation o
 Before final amplification, the output signal was normalized to bring it back to the [−1,1] range and to ensure the overall energy level remained natural. Finally, a small gain factor of 1.2 was applied to the cleaned signal to restore its loudness closer to the original level without introducing additional noise or distortion. In the last step, the signal was limited to prevent clipping.
 
 
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ce1a1716-f407-421a-9b63-709e564875d3" width="1200"/>
+</p>
 
 
 
