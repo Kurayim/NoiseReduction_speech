@@ -103,7 +103,11 @@ Although this method is simple and computationally efficient, it may introduce a
 
 
 
+From the analysis of the plots, it can be concluded that this method has effectively filtered the noise to a considerable extent and demonstrated satisfactory performance. However, the most important criterion for evaluation is the quality of the output audio file.
 
+After listening to the file Recording8_Cleaned.wav, it appears that the environmental noise has been largely removed, and the speech signal power has been preserved without significant attenuation.
+
+Nonetheless, one notable drawback of this method is the occurrence of musical noise, which manifests as unnatural and unpleasant sounds in the background of the audio file.
 
 
 
