@@ -119,14 +119,7 @@ Afterward, I defined another parameter called the spectral floor. This parameter
 
 Despite these improvements, reducing musical noise led to a slight attenuation of the speech signal. Therefore, it was necessary to carefully and conservatively amplify the signal to avoid enhancing any remaining weak noise components.
 
-Before final amplification, the output signal was normalized to bring it back to the 
-[
-−
-1
-,
-1
-]
-[−1,1] range and to ensure the overall energy level remained natural. Finally, a small gain factor of 1.2 was applied to the cleaned signal to restore its loudness closer to the original level without introducing additional noise or distortion. In the last step, the signal was limited to prevent clipping.
+Before final amplification, the output signal was normalized to bring it back to the [−1,1] range and to ensure the overall energy level remained natural. Finally, a small gain factor of 1.2 was applied to the cleaned signal to restore its loudness closer to the original level without introducing additional noise or distortion. In the last step, the signal was limited to prevent clipping.
 
 
 
