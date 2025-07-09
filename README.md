@@ -83,6 +83,34 @@ The parameter
 Overall, this filter has demonstrated successful performance in reducing stationary or slowly varying noise; however, when listening to the output audio, it can be noticed that the speech signal intensity is also slightly reduced, which is considered a common drawback of adaptive noise cancellation techniques.
 
 
+# Spectral Subtraction
+Considering the rather unsatisfactory performance obtained from the previous approach (due to the attenuation of the speech signal), I decided to try a new method.
+
+Spectral subtraction is a classical and widely used technique for noise reduction in audio signals, especially in speech enhancement applications. The core idea of this method is based on estimating the noise spectrum from portions of the signal where only noise is present (i.e., there is no speech or desired signal in those segments).
+
+Once an estimate of the noise spectrum is obtained, this spectrum is subtracted from the noisy signal’s spectrum to emphasize the components of the original signal.
+
+In practice, the signal is first divided into short, overlapping frames. Each frame is then transformed into the frequency domain using the Short-Time Fourier Transform (STFT). The average spectrum of the noise-only segments is stored as the noise reference profile. This reference spectrum is then subtracted from each noisy frame’s spectrum. Any resulting negative values from this subtraction are set to zero to avoid introducing artificial noise.
+
+Finally, the modified magnitude spectrum is combined with the original phase information, and the time-domain signal is reconstructed using the Inverse Short-Time Fourier Transform (ISTFT).
+
+Although this method is simple and computationally efficient, it may introduce artificial noise or unpleasant artifacts (commonly referred to as musical noise) if the noise is inaccurately estimated or if there are rapid variations in the noise characteristics.
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b154dc15-74a5-43f5-a344-dd9e7afcf753" width="1200"/>
+</p>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
