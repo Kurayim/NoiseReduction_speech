@@ -110,6 +110,31 @@ After listening to the file Recording8_Cleaned.wav, it appears that the environm
 Nonetheless, one notable drawback of this method is the occurrence of musical noise, which manifests as unnatural and unpleasant sounds in the background of the audio file.
 
 
+# ImprovedSpectralSubtraction
+
+
+To improve this method, I introduced a parameter called alpha. By adjusting this parameter, the noise energy is reduced more aggressively than the initially estimated amount, which helps to suppress the rapid spectral fluctuations responsible for producing musical noise. Based on the experimental results obtained in MATLAB, I set the optimal value of this parameter to 3.5.
+
+Afterward, I defined another parameter called the spectral floor. This parameter prevents the spectrum from being excessively reduced to zero and ensures that very low-energy spectral components are partially preserved. As a result, the likelihood of musical noise artifacts is significantly diminished.
+
+Despite these improvements, reducing musical noise led to a slight attenuation of the speech signal. Therefore, it was necessary to carefully and conservatively amplify the signal to avoid enhancing any remaining weak noise components.
+
+Before final amplification, the output signal was normalized to bring it back to the 
+[
+−
+1
+,
+1
+]
+[−1,1] range and to ensure the overall energy level remained natural. Finally, a small gain factor of 1.2 was applied to the cleaned signal to restore its loudness closer to the original level without introducing additional noise or distortion. In the last step, the signal was limited to prevent clipping.
+
+
+
+
+
+
+
+
 
 
 
