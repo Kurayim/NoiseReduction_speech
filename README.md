@@ -127,10 +127,22 @@ Before final amplification, the output signal was normalized to bring it back to
 </p>
 
 
+The results obtained from this filter are very satisfactory; according to the spectrogram, most of the noise present in the original signal has been effectively removed. More importantly, when listening to the filtered audio file, the speech can be heard clearly and almost without any noise.
+
+Of course, stating that “there is no noise at all” would be somewhat exaggerated; however, it can be said that the signal has been largely cleaned and a satisfactory quality has been achieved.
+
+One important point I realized during this project is that when using any filter — even if it is not clearly perceptible in the output — a part of the energy or fine details of the original signal is always unintentionally reduced. In general, filters may not only remove noise but also weaken some important components of the target signal, which should always be taken into consideration.
+
+Nevertheless, as mentioned at the beginning, I also intend to explore and evaluate the Wiener filter. Therefore, in the following steps, this filter will also be applied.
 
 
+# ImprovedSpectralSubtraction
 
+The Wiener filter is one of the well-known and effective methods in signal processing for noise reduction and signal quality enhancement. This filter is designed based on the principle of minimizing the mean squared error (MMSE), aiming to provide an optimal estimate of the original signal in the presence of noise.
 
+In practice, the Wiener filter calculates the signal-to-noise ratio (SNR) in the frequency domain and applies a gain to the signal that suppresses noisy components while preserving the essential parts of the original signal.
+
+Due to its strong capability to reduce noise while maintaining signal quality, this approach is widely used in many practical applications, especially in audio and image processing, as well as in communication systems.
 
 
 
