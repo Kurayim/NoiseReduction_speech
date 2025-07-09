@@ -136,13 +136,30 @@ One important point I realized during this project is that when using any filter
 Nevertheless, as mentioned at the beginning, I also intend to explore and evaluate the Wiener filter. Therefore, in the following steps, this filter will also be applied.
 
 
-# ImprovedSpectralSubtraction
+# Wiener sensor
 
 The Wiener filter is one of the well-known and effective methods in signal processing for noise reduction and signal quality enhancement. This filter is designed based on the principle of minimizing the mean squared error (MMSE), aiming to provide an optimal estimate of the original signal in the presence of noise.
 
 In practice, the Wiener filter calculates the signal-to-noise ratio (SNR) in the frequency domain and applies a gain to the signal that suppresses noisy components while preserving the essential parts of the original signal.
 
 Due to its strong capability to reduce noise while maintaining signal quality, this approach is widely used in many practical applications, especially in audio and image processing, as well as in communication systems.
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/da794167-ac7f-4305-90a4-d53a4075b0e0" width="1200"/>
+</p>
+
+
+The result I obtained from the Wiener filter was not very satisfactory. In the output audio file, not only was the target signal noticeably weakened, but the noise also remained present. However, it is worth noting that many researchers and engineers have praised this filter, and it is likely that my implementation was not sufficiently accurate or optimized.
+
+Ultimately, I was able to successfully clean the desired signal using the Spectral Subtraction filter. Now that this method has performed effectively, I do not see a strong reason to combine multiple filters.
+
+Nevertheless, an important insight I gained from this project is that while filters can effectively isolate a target signal from surrounding noise and other signals, there is always a risk that parts of the desired signal may also be lost or attenuated in the process. I experienced this firsthand throughout the project.
+
+
+
+
+
 
 
 
