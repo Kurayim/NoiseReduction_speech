@@ -136,7 +136,7 @@ One important point I realized during this project is that when using any filter
 Nevertheless, as mentioned at the beginning, I also intend to explore and evaluate the Wiener filter. Therefore, in the following steps, this filter will also be applied.
 
 
-# Wiener sensor
+# Wiener Filter
 
 The Wiener filter is one of the well-known and effective methods in signal processing for noise reduction and signal quality enhancement. This filter is designed based on the principle of minimizing the mean squared error (MMSE), aiming to provide an optimal estimate of the original signal in the presence of noise.
 
